@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build-env
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build-env
 WORKDIR /App
 
 # Copy the entire solution and projects
@@ -11,7 +11,7 @@ RUN dotnet restore BeautyHub.slnx
 RUN dotnet publish BeautyHub.Api/BeautyHub.Api.csproj -c Release -o out
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:9.0
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /App
 COPY --from=build-env /App/out .
 
