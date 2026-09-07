@@ -46,8 +46,8 @@ const Register = () => {
     <div className="flex h-screen bg-slate-50 items-center justify-center">
       <div className="bg-white/70 backdrop-blur-md border border-white/50 rounded-2xl shadow-lg p-12 w-full max-w-[450px] flex flex-col gap-6">
         <div className="flex flex-col items-center text-center">
-          <img src="/favicon.svg" alt="BeautyHub Logo" className="w-12 h-12 mb-3 rounded-2xl shadow-lg shadow-red-500/20" />
-          <h1 className="text-[2rem] font-black tracking-tight m-0 text-slate-800">Beauty<span className="text-orange-500">Hub</span></h1>
+          <img src="/favicon.svg" alt="BeautyHub Logo" className="w-12 h-12 mb-3 rounded-2xl shadow-lg shadow-blue-500/20" />
+          <h1 className="text-[2rem] font-black tracking-tight m-0 text-slate-800">Beauty<span className="text-blue-500">Hub</span></h1>
           <p className="text-slate-500 mt-2">Crea tu cuenta de administrador</p>
         </div>
 

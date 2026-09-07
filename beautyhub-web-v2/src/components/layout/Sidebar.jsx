@@ -36,8 +36,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       {/* Logo */}
       <div className="h-20 flex items-center justify-between px-6 md:px-8 border-b border-slate-100 shrink-0">
         <div className="flex items-center gap-3">
-          <img src="/favicon.svg" alt="BeautyHub Logo" className="w-8 h-8 rounded-lg shadow-lg shadow-red-500/20 shrink-0" />
-          <h2 className="text-2xl font-black tracking-tight text-slate-800">Beauty<span className="text-orange-500">Hub</span></h2>
+          <img src="/favicon.svg" alt="BeautyHub Logo" className="w-8 h-8 rounded-lg shadow-lg shadow-blue-500/20 shrink-0" />
+          <h2 className="text-2xl font-black tracking-tight text-slate-800">Beauty<span className="text-blue-500">Hub</span></h2>
         </div>
         <button 
           className="md:hidden p-2 text-slate-400 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition-colors"

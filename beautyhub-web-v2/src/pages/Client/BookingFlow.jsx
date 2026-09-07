@@ -192,7 +192,7 @@ const BookingFlow = () => {
             <div className="mb-4 text-green-500">
               <CheckCircle2 size={64} />
             </div>
-            <h2 className="bg-gradient-to-br from-blue-500 to-orange-500 bg-clip-text text-transparent">¡Cita Confirmada!</h2>
+            <h2 className="bg-gradient-to-br from-blue-500 to-cyan-500 bg-clip-text text-transparent">¡Cita Confirmada!</h2>
             <p className="text-slate-500 mt-4">
               Te esperamos el <strong>{booking.date}</strong> a las <strong>{booking.time}</strong> con <strong>{booking.employee?.name}</strong>.
             </p>

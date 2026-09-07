@@ -31,7 +31,7 @@ const Inicio = () => {
   const stats = reports ? [
     { title: 'Ingresos de Hoy', value: `$${reports.todayRevenue}`, info: 'Suma de todas las transacciones de ingreso (Caja) registradas el día de hoy.', icon: <DollarSign size={24} />, bgClass: 'bg-emerald-500/15', textClass: 'text-emerald-500' },
     { title: 'Citas de Hoy', value: reports.todayAppointments, info: 'Total de citas agendadas cuya hora de inicio es durante el día de hoy.', icon: <Calendar size={24} />, bgClass: 'bg-blue-500/15', textClass: 'text-blue-500' },
-    { title: 'Ingresos (7 días)', value: `$${reports.weekRevenue}`, info: 'Suma de todas las transacciones de ingreso (Caja) en los últimos 7 días.', icon: <TrendingUp size={24} />, bgClass: 'bg-orange-500/15', textClass: 'text-orange-500' },
+    { title: 'Ingresos (7 días)', value: `$${reports.weekRevenue}`, info: 'Suma de todas las transacciones de ingreso (Caja) en los últimos 7 días.', icon: <TrendingUp size={24} />, bgClass: 'bg-cyan-500/15', textClass: 'text-cyan-500' },
     { title: 'Total Clientes', value: reports.totalClients, info: 'Número total de personas registradas con el rol de Cliente en tu estética.', icon: <Users size={24} />, bgClass: 'bg-slate-900/15', textClass: 'text-slate-900' },
   ] : [];
 
