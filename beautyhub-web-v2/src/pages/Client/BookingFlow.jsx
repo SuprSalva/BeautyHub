@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation } from '@tanstack/react-query';
-import { Scissors, CheckCircle2 } from 'lucide-react';
+import { Scissors, CheckCircle2, MessageCircle } from 'lucide-react';
 import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { es } from 'date-fns/locale';
@@ -211,6 +211,15 @@ const BookingFlow = () => {
                 </li>
               </ul>
             </div>
+            <a 
+              href={`https://wa.me/?text=Hola, acabo de agendar una cita para el ${booking.date} a las ${booking.time} con ${booking.employee?.name} en ${salonName}.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-[0.95rem] transition-all duration-300 gap-2 cursor-pointer border-none bg-emerald-500 text-white shadow-[0_4px_10px_rgba(16,185,129,0.3)] hover:bg-emerald-600 hover:-translate-y-[2px] no-underline w-full"
+            >
+              <MessageCircle size={20} />
+              Enviar mensaje al salón
+            </a>
           </div>
         )}
       </div>

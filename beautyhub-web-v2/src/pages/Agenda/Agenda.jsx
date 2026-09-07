@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
-import { CalendarX2, User, Scissors, CheckCircle, XCircle } from 'lucide-react';
+import { CalendarX2, User, Scissors, CheckCircle, XCircle, MessageCircle } from 'lucide-react';
 import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { es } from 'date-fns/locale';
@@ -349,6 +349,15 @@ const Agenda = () => {
                 </>
               ) : (
                 <>
+                  <a
+                    href={`https://wa.me/${(selectedApp.clientPhone || '').replace(/\D/g, '')}?text=Hola ${selectedApp.clientName}, te escribimos para recordarte tu cita el día ${formatDate(selectedApp.startTime)} a las ${formatTime(selectedApp.startTime)}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-emerald-500 text-white hover:bg-emerald-600 inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-[0.95rem] transition-all duration-300 gap-2 cursor-pointer border-none no-underline mb-2"
+                  >
+                    <MessageCircle size={20} /> Contactar Cliente
+                  </a>
+
                   {JSON.stringify([...checkoutServiceIds].sort()) !== JSON.stringify([...(selectedApp.serviceIds || [])].sort()) && (
                     <button 
                       className="w-full bg-blue-500 text-white hover:bg-blue-600 inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-[0.95rem] transition-all duration-300 gap-2 cursor-pointer border-none"
