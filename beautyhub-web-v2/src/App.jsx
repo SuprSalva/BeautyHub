@@ -20,8 +20,8 @@ import Perfil from './pages/Perfil/Perfil';
 const Landing = () => (
   <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-center h-screen flex-col gap-8">
     <div className="flex flex-col items-center gap-2">
-      <img src="/favicon.svg" alt="StyleFlow Logo" className="w-24 h-24 mb-2 drop-shadow-xl" />
-      <h1 className="bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent text-[4rem]">StyleFlow</h1>
+      <img src="/favicon.svg" alt="BeautyHub Logo" className="w-24 h-24 mb-2 drop-shadow-xl" />
+      <h1 className="bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent text-[4rem]">BeautyHub</h1>
     </div>
     <p className="text-muted text-xl">La gestión inteligente para tu salón de belleza o barbería.</p>
     <div className="flex gap-4">

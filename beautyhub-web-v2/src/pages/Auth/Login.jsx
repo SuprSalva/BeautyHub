@@ -42,10 +42,10 @@ const Login = () => {
         
         {/* Logo */}
         <div className="flex justify-center mb-6">
-          <img src="/favicon.svg" alt="StyleFlow Logo" className="w-14 h-14 rounded-2xl shadow-lg shadow-red-500/20" />
+          <img src="/favicon.svg" alt="BeautyHub Logo" className="w-14 h-14 rounded-2xl shadow-lg shadow-red-500/20" />
         </div>
 
-        <h1 className="text-3xl font-black tracking-tight text-slate-800 mb-2">Style<span className="text-orange-500">Flow</span></h1>
+        <h1 className="text-3xl font-black tracking-tight text-slate-800 mb-2">Beauty<span className="text-orange-500">Hub</span></h1>
         <p className="text-slate-500 font-medium mb-8">Ingresa a tu panel de control</p>
 
         {error && (

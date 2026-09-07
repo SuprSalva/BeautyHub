@@ -91,7 +91,7 @@ using (var scope = app.Services.CreateScope())
         {
             Id = Guid.NewGuid(),
             TenantId = tenantId,
-            Message = "¡Bienvenido a StyleFlow! Tu cuenta ha sido creada exitosamente.",
+            Message = "¡Bienvenido a BeautyHub! Tu cuenta ha sido creada exitosamente.",
             Type = "Success",
             IsRead = false,
             CreatedAt = DateTime.UtcNow
