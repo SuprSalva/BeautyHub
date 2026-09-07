@@ -42,7 +42,7 @@ const AppRouter = () => {
   
   // Lógica simple para simular en local
   // Si el host no es localhost (ej. salon.localhost), mostramos reserva.
-  const isTenant = host.split('.')[0] !== 'localhost' && host !== '127.0.0.1';
+  const isTenant = host.split('.')[0] !== 'localhost' && host !== '127.0.0.1' && !host.includes('vercel.app');
 
   if (isTenant) {
     return (
