@@ -36,8 +36,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       {/* Logo */}
       <div className="h-20 flex items-center justify-between px-6 md:px-8 border-b border-slate-100 shrink-0">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-orange-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-200 shrink-0">S</div>
-          <h2 className="text-2xl font-black tracking-tight text-slate-800">Style<span className="text-blue-500">Flow</span></h2>
+          <img src="/favicon.svg" alt="StyleFlow Logo" className="w-8 h-8 rounded-lg shadow-lg shadow-red-500/20 shrink-0" />
+          <h2 className="text-2xl font-black tracking-tight text-slate-800">Style<span className="text-orange-500">Flow</span></h2>
         </div>
         <button 
           className="md:hidden p-2 text-slate-400 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition-colors"

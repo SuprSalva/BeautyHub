@@ -19,7 +19,10 @@ import Perfil from './pages/Perfil/Perfil';
 
 const Landing = () => (
   <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-center h-screen flex-col gap-8">
-    <h1 className="bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent text-[4rem]">StyleFlow</h1>
+    <div className="flex flex-col items-center gap-2">
+      <img src="/favicon.svg" alt="StyleFlow Logo" className="w-24 h-24 mb-2 drop-shadow-xl" />
+      <h1 className="bg-gradient-to-br from-red-500 to-orange-500 bg-clip-text text-transparent text-[4rem]">StyleFlow</h1>
+    </div>
     <p className="text-muted text-xl">La gestión inteligente para tu salón de belleza o barbería.</p>
     <div className="flex gap-4">
       <button className="inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-[0.95rem] transition-all duration-300 gap-2 cursor-pointer border-none bg-red-500 text-white shadow-[0_4px_10px_rgba(239,68,68,0.3)] hover:bg-red-600 hover:-translate-y-[2px] hover:shadow-[0_0_15px_rgba(239,68,68,0.5)]">Comienza Gratis</button>
