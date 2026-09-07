@@ -63,6 +63,8 @@ app.UseAuthorization();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<BeautyHub.Infrastructure.Data.ApplicationDbContext>();
+    dbContext.Database.Migrate(); // Apply pending migrations
+
     if (!dbContext.Tenants.Any())
     {
         var tenantId = Guid.NewGuid();
