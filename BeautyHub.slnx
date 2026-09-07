@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BeautyHub.Api/BeautyHub.Api.csproj" />
+  <Project Path="BeautyHub.Core/BeautyHub.Core.csproj" />
+  <Project Path="BeautyHub.Infrastructure/BeautyHub.Infrastructure.csproj" />
+</Solution>
